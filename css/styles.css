@@ -1,0 +1,39 @@
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+img {
+    width: 15%;
+    margin: 0.5em;
+}
+
+@media (max-width: 699px) {
+    .logos {
+        flex-wrap: wrap;
+    }
+    img {
+        width: 25%;
+    }
+}
+
+@media (max-width: 599px) {
+    .logos {
+        flex-wrap: wrap;
+    }
+    img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 399px) {
+    .logos {
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        width: 30%;
+        margin: 2em;
+    }
+}
